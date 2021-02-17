@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ostoslista</title>
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ostoslista.css') }}" />
+    <script type=text/javascript src="{{ url_for('static', filename='js/ostoslista.js') }}"></script> 
+</head>
+    <body onload="readFromFile();">
+	<h1>----------Ostoslista----------</h1>
+	        
+	<div class="list" id="list">
+	    <pre>{{ n|safe }} </pre>   
+	</div>
+
+	<div class="input">
+	    <label class="add_item" for="add_item">Lisää tavara ostoslistaan:</label> <br>
+    	    <form method='post'>
+    		<input class="new_item" name ='item' type="text">
+    		<input type = "submit" name ="submit" value="Write to file">
+    	    </form>
+    	</div>
+	<!-- This script stops re-sending te form on refresh-->
+    	<script>
+	   if ( window.history.replaceState ) 
+	    {
+		 window.history.replaceState( null, null, window.location.href);
+	    }
+	</script>
+    
+    </body>
+</html>
+

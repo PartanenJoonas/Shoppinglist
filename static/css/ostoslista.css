@@ -1,0 +1,35 @@
+
+body {
+    background-color: #4d4d4d;
+}
+h1 {
+    display: inline-block;
+    width: 100%;
+    font-size: 68px;
+    text-align: center;
+}
+.list{
+    background-color: #f7d023;
+    white-space: normal;
+    word-spacing: 9999px;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 10px;
+    box-shadow: -8px -8px #888888;
+}
+.input {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add_item {
+    display: inline-block;
+    width: 100%;
+   
+}
+.new_item {
+    width: 200px;
+    align: center;
+}
