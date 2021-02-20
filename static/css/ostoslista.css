@@ -10,8 +10,8 @@ h1 {
 }
 .list{
     background-color: #f7d023;
-    white-space: normal;
-    word-spacing: 9999px;
+    white-space: pre-line;
+    word-spacing: 9px;
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
