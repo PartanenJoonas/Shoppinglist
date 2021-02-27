@@ -14,16 +14,18 @@
 	        
 	<div class="list" id="list">
 	    <pre>{{ n|safe }} </pre>   
-	</div>
+	</div><br>
 
 	<div class="input">
 	    <label class="add_item" for="add_item">Lisää tavara ostoslistaan:</label> <br>
     	    <form method='post'>
     		<input class="new_item" name ='item' type="text">
-    		<input type = "submit" name ="submit" value="Write to file">
+    		<input class="submit" type = "submit" name ="submit" value="Lisää tavara">
     	    </form>
-    	</div>
-	<!-- This script stops re-sending te form on refresh-->
+    	</div> <br>
+
+	<a href = "/newlist" ><input class="button" type="button" value="Uusi lista"></a>
+	<!-- This script stops re-sending the form on refresh-->
     	<script>
 	   if ( window.history.replaceState ) 
 	    {
